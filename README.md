@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+Auto-Complete component with following features:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. There is error handling in place for failed API requests, ensuring that the user is informed if something goes wrong and providing a fallback behavior.
+2. It highlights the searched text entered in the input box inside results section.
+3. It has debounce function which helps to reduce unnecessary network requests.
+4. It has unit test cases which is written in RTL.
+5. It has some accessibility features such as ARIA attributes, keyboard navigation support, and highlighted text for matched results, which can improve usability for users with disabilities.
+6. The autocomplete functionality is encapsulated within a single React component (AutoComplete), promoting reusability and maintainability.
+7. This component is functional component used hooks for state and Typescript for types.
 
-## Available Scripts
+Types:
 
-In the project directory, you can run:
+Product - Represents a product object with various properties.
 
-### `npm start`
+Property:Type -> Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+id:number -> Unique identifier for the product.
+title:string -> Title of the product.
+description:string -> Description of the product.
+price:number -> Price of the product.
+discountPercentage:number -> Discount percentage applied to the product.
+rating:number -> Rating of the product.
+stock:number -> Quantity of the product in stock.
+brand:string -> Brand of the product.
+category:string -> Category of the product.
+thumbnail:string -> URL of the product thumbnail image.
+images:string[] -> Array of URLs for additional product images.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+APIResponse - Represents the response object returned by the API.
 
-### `npm test`
+Property:Type -> Description
+products:Product[] -> Array of products returned by the API.
+total:number -> Total number of products available.
+skip:number -> Number of products skipped in pagination.
+limit:number -> Maximum number of products per page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run the project
+Clone the repo
+Run npm install or yarn install
+Development mode: Run npm start or yarn start
+Production build: Run npm run build
