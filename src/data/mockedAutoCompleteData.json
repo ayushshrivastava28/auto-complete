@@ -1,0 +1,23 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Default Laptop",
+            "description": "A reliable and powerful laptop for everyday use.",
+            "price": 799,
+            "discountPercentage": 10.5,
+            "rating": 4.5,
+            "stock": 15,
+            "brand": "Generic",
+            "category": "laptops",
+            "thumbnail": "https://dummyimage.com/200x200/000/fff&text=Laptop",
+            "images": [
+                "https://dummyimage.com/600x400/000/fff&text=Laptop+1",
+                "https://dummyimage.com/600x400/000/fff&text=Laptop+2"
+            ]
+        }
+    ],
+    "total": 1,
+    "skip": 0,
+    "limit": 1
+}
