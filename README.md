@@ -1,3 +1,5 @@
+Deployed URL - https://auto-complete-khaki.vercel.app/
+
 Auto-Complete component with following features:
 
 1. There is error handling in place for failed API requests, ensuring that the user is informed if something goes wrong and providing a fallback behavior.
