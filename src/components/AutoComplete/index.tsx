@@ -62,16 +62,6 @@ const AutoComplete: React.FC = () => {
     }
   };
 
-  // Event handler for showing autocomplete results on mouse enter
-  const handleMouseEnter = () => {
-    setShowResults(true);
-  };
-
-  // Event handler for hiding autocomplete results on mouse leave
-  const handleMouseLeave = () => {
-    setShowResults(false);
-  };
-
   // Function to highlight matched text in the product titles
   const highlightMatch = (name: string) => {
     const regex = new RegExp(`(${text})`, "gi"); // Regular expression for case-insensitive match
@@ -140,11 +130,7 @@ const AutoComplete: React.FC = () => {
 
   // Render the AutoComplete component
   return (
-    <section
-      className="autocomplete-container"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <section className="autocomplete-container">
       <input
         type="text"
         value={text}
